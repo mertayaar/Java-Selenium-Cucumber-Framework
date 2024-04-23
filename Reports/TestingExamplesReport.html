@@ -1,0 +1,1253 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Testin Examples</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Testin Examples Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Apr 23, 2024 12:02:29 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@Smoke</a><a class="dropdown-item" href="#">@RegisterFeature</a><a class="dropdown-item" href="#">@Regression</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">User Registration</p>
+            <p class="text-sm">
+              <span>12:02:30 AM</span> / <span>00:00:39:935</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">User Registration</h5>
+<span class='badge badge-success'>04.23.2024 12:02:30 AM</span>
+<span class='badge badge-danger'>04.23.2024 12:03:09 AM</span>
+<span class='badge badge-default'>00:00:39:935</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Register a new user with valid credentials</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.Registration_Steps.iAmOnTheRegistrationPage()">
+                <span>Given I am on the registration page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Registration_Steps.iFillInTheRegistrationFormWithValidDataFrom(java.lang.String)">
+                <span>When I fill in the registration form with valid data from "validData.csv"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Registration_Steps.iSubmitTheRegistrationForm()">
+                <span>And I submit the registration form</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.Registration_Steps.iShouldSeeASuccessMessage(java.lang.String)">
+                <span>Then I should see a "Your account was created successfully" message</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="9"><span class="badge log fail-bg mr-2">Fail</span>: Registration with empty field</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>: Registration with empty field</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I am on the registration page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I fill in the registration form with an empty field by following details</span>
+      <div><table class='markup-table table '><tr><td>John</td></tr><tr><td>Doe</td></tr><tr><td>123 Main St</td></tr><tr><td>Springfield</td></tr><tr><td></td></tr><tr><td>62701</td></tr><tr><td>1234567890</td></tr><tr><td>123456789</td></tr><tr><td>johndoe</td></tr><tr><td>password1</td></tr><tr><td>password1</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I submit the registration form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see "required" message on "errorState" title</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>: Registration with empty field</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I am on the registration page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I fill in the registration form with an empty field by following details</span>
+      <div><table class='markup-table table '><tr><td>John</td></tr><tr><td>Doe</td></tr><tr><td>123 Main St</td></tr><tr><td>Springfield</td></tr><tr><td>CA</td></tr><tr><td>62701</td></tr><tr><td>1234567890</td></tr><tr><td>123456789</td></tr><tr><td>johndoe</td></tr><tr><td></td></tr><tr><td>password1</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I submit the registration form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see "required" message on "errorPassword" title</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="24"><span class="badge log pass-bg mr-2">Pass</span>: Registration with empty field</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I am on the registration page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I fill in the registration form with an empty field by following details</span>
+      <div><table class='markup-table table '><tr><td>Alice</td></tr><tr><td>Smith</td></tr><tr><td>456 Elm St</td></tr><tr><td>Exampleville</td></tr><tr><td>CA</td></tr><tr><td>90210</td></tr><tr><td>9876543210</td></tr><tr><td>987654321</td></tr><tr><td>alicesmith</td></tr><tr><td>password2</td></tr><tr><td></td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I submit the registration form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see "required" message on "errorPasswordConfirm" title</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="31"><span class="badge log pass-bg mr-2">Pass</span>: Registration with empty field</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I am on the registration page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I fill in the registration form with an empty field by following details</span>
+      <div><table class='markup-table table '><tr><td>Bob</td></tr><tr><td>Johnson</td></tr><tr><td></td></tr><tr><td>Smalltown</td></tr><tr><td>TX</td></tr><tr><td>12345</td></tr><tr><td>5555555555</td></tr><tr><td>555555555</td></tr><tr><td>bobjohn</td></tr><tr><td>password3</td></tr><tr><td>password3</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I submit the registration form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see "required" message on "errorAddress" title</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="38"><span class="badge log pass-bg mr-2">Pass</span>: Registration with empty field</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I am on the registration page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I fill in the registration form with an empty field by following details</span>
+      <div><table class='markup-table table '><tr><td>Emma</td></tr><tr><td>Wilson</td></tr><tr><td>789 Oak St</td></tr><tr><td>Bigcity</td></tr><tr><td>NY</td></tr><tr><td></td></tr><tr><td>1112223333</td></tr><tr><td>111222333</td></tr><tr><td>emmawil</td></tr><tr><td>password4</td></tr><tr><td>password4</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I submit the registration form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see "required" message on "errorZipCode" title</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="45"><span class="badge log pass-bg mr-2">Pass</span>: Registration with empty field</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I am on the registration page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I fill in the registration form with an empty field by following details</span>
+      <div><table class='markup-table table '><tr><td>David</td></tr><tr><td>Lee</td></tr><tr><td>789 Oak St</td></tr><tr><td></td></tr><tr><td>PA</td></tr><tr><td>54321</td></tr><tr><td>4444444444</td></tr><tr><td>444444444</td></tr><tr><td>dlee</td></tr><tr><td>password5</td></tr><tr><td>password5</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I submit the registration form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see "required" message on "errorCity" title</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="52"><span class="badge log pass-bg mr-2">Pass</span>: Registration with empty field</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I am on the registration page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I fill in the registration form with an empty field by following details</span>
+      <div><table class='markup-table table '><tr><td></td></tr><tr><td>Brown</td></tr><tr><td>789 Oak St</td></tr><tr><td>Suburbia</td></tr><tr><td>FL</td></tr><tr><td>54321</td></tr><tr><td>7778889999</td></tr><tr><td>777888999</td></tr><tr><td>ebrown</td></tr><tr><td>password6</td></tr><tr><td>password6</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I submit the registration form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see "required" message on "errorFirstName" title</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="59"><span class="badge log pass-bg mr-2">Pass</span>: Registration with empty field</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I am on the registration page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I fill in the registration form with an empty field by following details</span>
+      <div><table class='markup-table table '><tr><td>Olivia</td></tr><tr><td></td></tr><tr><td>101 Pine St</td></tr><tr><td>Villageton</td></tr><tr><td>OH</td></tr><tr><td>12345</td></tr><tr><td>1112223333</td></tr><tr><td>999999999</td></tr><tr><td>oltaylor</td></tr><tr><td>password7</td></tr><tr><td>password7</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I submit the registration form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see "required" message on "errorLastName" title</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="66"><span class="badge log pass-bg mr-2">Pass</span>: Registration with empty field</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I am on the registration page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I fill in the registration form with an empty field by following details</span>
+      <div><table class='markup-table table '><tr><td>Liam</td></tr><tr><td>Martinez</td></tr><tr><td>321 Cedar St</td></tr><tr><td>Townsville</td></tr><tr><td>AZ</td></tr><tr><td>54321</td></tr><tr><td>6666666666</td></tr><tr><td></td></tr><tr><td>liamm</td></tr><tr><td>password8</td></tr><tr><td>password8</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I submit the registration form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see "required" message on "errorSsn" title</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="73"><span class="badge log pass-bg mr-2">Pass</span>: Registration with empty field</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I am on the registration page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I fill in the registration form with an empty field by following details</span>
+      <div><table class='markup-table table '><tr><td>Liam</td></tr><tr><td>Martinez</td></tr><tr><td>321 Cedar St</td></tr><tr><td>Townsville</td></tr><tr><td>AZ</td></tr><tr><td>54321</td></tr><tr><td>6666666666</td></tr><tr><td>999999999</td></tr><tr><td></td></tr><tr><td>password8</td></tr><tr><td>password8</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I submit the registration form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see "required" message on "errorUsername" title</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="80"><span class="badge log fail-bg mr-2">Fail</span>: Registration with empty field</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I am on the registration page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I fill in the registration form with an empty field by following details</span>
+      <div><table class='markup-table table '><tr><td>Liam</td></tr><tr><td>Martinez</td></tr><tr><td>321 Cedar St</td></tr><tr><td>Townsville</td></tr><tr><td>AZ</td></tr><tr><td>54321</td></tr><tr><td></td></tr><tr><td>999999999</td></tr><tr><td>liamm</td></tr><tr><td>password8</td></tr><tr><td>password8</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I submit the registration form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then I should see "required" message on "errorPhone" title</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "String.contains(java.lang.CharSequence)" because the return value of "pages.RegisterPage.getErrorMessage(String)" is null
+	at stepDefinitions.Registration_Steps.iShouldSeeMessageOnTitle(Registration_Steps.java:51)
+	at ✽.I should see "required" message on "errorPhone" title(file:///Users/mertayaar/JAVA/TechnoStudy_Projects/ApiTesting/Java-Selenium-Cucumber-Framework/src/test/resources/features/Registration/register.feature:39)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>stepDefinitions.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
+      <div>: Registration with empty field
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='screenshots/embedded1.png' src="screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.NullPointerException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:03:09 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='85'>Then I should see "required" message on "errorPhone" title</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field.Then I should see "required" message on "errorPhone" title</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>11</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Smoke</p>
+<p class="duration text-sm">12 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Smoke</h4>
+<span status="pass" class='badge log pass-bg'>11 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:30 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Register a new user with valid credentials</a>
+<div class="">
+<span class="badge badge-default">User Registration.Register a new user with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:33 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:36 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:40 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='24'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:43 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='31'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:46 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='38'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='45'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:52 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='52'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:56 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='59'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:59 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='66'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:03:03 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='73'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:03:06 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='80'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>11</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@RegisterFeature</p>
+<p class="duration text-sm">12 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@RegisterFeature</h4>
+<span status="pass" class='badge log pass-bg'>11 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:30 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Register a new user with valid credentials</a>
+<div class="">
+<span class="badge badge-default">User Registration.Register a new user with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:33 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:36 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:40 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='24'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:43 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='31'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:46 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='38'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='45'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:52 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='52'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:56 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='59'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:59 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='66'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:03:03 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='73'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:03:06 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='80'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>11</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Regression</p>
+<p class="duration text-sm">12 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Regression</h4>
+<span status="pass" class='badge log pass-bg'>11 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:30 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Register a new user with valid credentials</a>
+<div class="">
+<span class="badge badge-default">User Registration.Register a new user with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:33 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:36 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:40 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='24'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:43 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='31'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:46 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='38'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='45'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:52 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='52'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:56 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='59'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:02:59 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='66'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:03:03 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='73'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>00:03:06 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='80'>: Registration with empty field</a>
+<div class="">
+<span class="badge badge-default">User Registration.: Registration with empty field</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Apr 23, 2024 12:02:29 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Apr 23, 2024 12:03:09 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='91%'><b>11</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='8%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='97%'><b>48</b> steps passed</small></div>
+<div>
+<small data-tooltip='2%'><b>1</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"User Registration":39.935
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@Smoke</td>
+<td>11</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>91.667%</td>
+</tr>
+<tr>
+<td>@RegisterFeature</td>
+<td>11</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>91.667%</td>
+</tr>
+<tr>
+<td>@Regression</td>
+<td>11</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>91.667%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>User Name</td>
+<td>mertayaar</td>
+</tr>
+<tr>
+<td>Time Zone</td>
+<td>America/New_York</td>
+</tr>
+<tr>
+<td>User</td>
+<td>Mert Ayar</td>
+</tr>
+<tr>
+<td>Application Name</td>
+<td>Testing Examples</td>
+</tr>
+<tr>
+<td>Operating System Info</td>
+<td>Mac OS X</td>
+</tr>
+<tr>
+<td>Department</td>
+<td>QA</td>
+</tr>
+<tr>
+<td>Additional line</td>
+<td>Additional info</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 11,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 48,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

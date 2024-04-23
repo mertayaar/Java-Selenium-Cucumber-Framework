@@ -1,0 +1,9 @@
+<config>
+    <environment>
+        <baseUrl>https://parabank.parasoft.com/parabank/index.htm</baseUrl>
+        <registerUrl>https://parabank.parasoft.com/parabank/register.htm</registerUrl>
+        <database>
+
+        </database>
+    </environment>
+</config>
